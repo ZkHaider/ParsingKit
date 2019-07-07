@@ -6,7 +6,7 @@
 //  Copyright © 2019 zkhaider. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ParsingKit.
 FOUNDATION_EXPORT double ParsingKitVersionNumber;
