@@ -42,8 +42,7 @@ This library has some built in `Parser`s that already handle parsing of certain 
 
 You can create your own `Parser` by extending it as so:
 
-```
-
+```swift
 // Example string to parser:
 // "{2.0}"
 
