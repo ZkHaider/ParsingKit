@@ -43,7 +43,7 @@ This library has some built in `Parser`s that already handle parsing of certain 
 You can create your own `Parser` by extending it as so:
 
 ```swift
-// Example string to parser:
+// Example string to parse:
 // "{2.0}"
 
 struct MyCustomStruct {
@@ -64,7 +64,7 @@ extension Parser where T == MyCustomStruct {
 
 }
 
-let stringToParse: String = "{2.0"
+let stringToParse: String = "{2.0}"
 let parser = Parser.myCustomStructParser
 parser.run(stringToParse)
 
