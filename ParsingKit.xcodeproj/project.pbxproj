@@ -38,6 +38,7 @@
 		C4A40CAA22D1DE41003AABAD /* Parser.CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.CGPoint.swift; sourceTree = "<group>"; };
 		C4A40CAC22D1DE4E003AABAD /* Parser.CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.CGSize.swift; sourceTree = "<group>"; };
 		C4A40CAE22D1DE5A003AABAD /* Parser.Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.Rect.swift; sourceTree = "<group>"; };
+		C4A40CB022D1DECE003AABAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		C4A40C8322D1DD5C003AABAD = {
 			isa = PBXGroup;
 			children = (
+				C4A40CB022D1DECE003AABAD /* README.md */,
 				C4A40C8F22D1DD5C003AABAD /* ParsingKit */,
 				C4A40C8E22D1DD5C003AABAD /* Products */,
 			);
