@@ -9,6 +9,12 @@
 import Foundation
 
 extension Parser where T == String {
+    
+    public static let text: Parser<T> = {
+        return prefix(while: { $0 != " " && $0 != "\n" })
+            .map({ String($0) })
+    }()
+    
     public static let leftCurlyBrace: Parser<T> = {
         return Parser<T>(run: { substring -> String? in
             guard

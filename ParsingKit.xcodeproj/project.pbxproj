@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48CD359230786AA005EE98C /* ParsingKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CD358230786AA005EE98C /* ParsingKitTests.swift */; };
+		C48CD35B230786AA005EE98C /* ParsingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A40C8D22D1DD5C003AABAD /* ParsingKit.framework */; };
+		C48CD362230786FC005EE98C /* Parsing.SpacesAndNewLines.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CD361230786FC005EE98C /* Parsing.SpacesAndNewLines.Test.swift */; };
+		C48CD364230798FC005EE98C /* Parser.Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CD363230798FC005EE98C /* Parser.Array.swift */; };
 		C4A40C9222D1DD5C003AABAD /* ParsingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A40C9022D1DD5C003AABAD /* ParsingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4A40C9922D1DDAC003AABAD /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A40C9822D1DDAC003AABAD /* Parser.swift */; };
 		C4A40C9B22D1DDC6003AABAD /* Parser.Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A40C9A22D1DDC6003AABAD /* Parser.Atomic.swift */; };
@@ -22,7 +26,22 @@
 		C4A40CAF22D1DE5A003AABAD /* Parser.Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A40CAE22D1DE5A003AABAD /* Parser.Rect.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C48CD35C230786AA005EE98C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A40C8422D1DD5C003AABAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A40C8C22D1DD5C003AABAD;
+			remoteInfo = ParsingKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C48CD356230786AA005EE98C /* ParsingKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParsingKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48CD358230786AA005EE98C /* ParsingKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingKitTests.swift; sourceTree = "<group>"; };
+		C48CD35A230786AA005EE98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48CD361230786FC005EE98C /* Parsing.SpacesAndNewLines.Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.SpacesAndNewLines.Test.swift; sourceTree = "<group>"; };
+		C48CD363230798FC005EE98C /* Parser.Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.Array.swift; sourceTree = "<group>"; };
 		C4A40C8D22D1DD5C003AABAD /* ParsingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParsingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A40C9022D1DD5C003AABAD /* ParsingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParsingKit.h; sourceTree = "<group>"; };
 		C4A40C9122D1DD5C003AABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +61,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C48CD353230786AA005EE98C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48CD35B230786AA005EE98C /* ParsingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A40C8A22D1DD5C003AABAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C48CD357230786AA005EE98C /* ParsingKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C48CD358230786AA005EE98C /* ParsingKitTests.swift */,
+				C48CD35A230786AA005EE98C /* Info.plist */,
+				C48CD361230786FC005EE98C /* Parsing.SpacesAndNewLines.Test.swift */,
+			);
+			path = ParsingKitTests;
+			sourceTree = "<group>";
+		};
 		C4A40C8322D1DD5C003AABAD = {
 			isa = PBXGroup;
 			children = (
 				C4A40CB022D1DECE003AABAD /* README.md */,
 				C4A40C8F22D1DD5C003AABAD /* ParsingKit */,
+				C48CD357230786AA005EE98C /* ParsingKitTests */,
 				C4A40C8E22D1DD5C003AABAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A40C8D22D1DD5C003AABAD /* ParsingKit.framework */,
+				C48CD356230786AA005EE98C /* ParsingKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +125,7 @@
 				C4A40CAA22D1DE41003AABAD /* Parser.CGPoint.swift */,
 				C4A40CAC22D1DE4E003AABAD /* Parser.CGSize.swift */,
 				C4A40CAE22D1DE5A003AABAD /* Parser.Rect.swift */,
+				C48CD363230798FC005EE98C /* Parser.Array.swift */,
 			);
 			path = ParsingKit;
 			sourceTree = "<group>";
@@ -104,6 +144,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C48CD355230786AA005EE98C /* ParsingKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C48CD360230786AA005EE98C /* Build configuration list for PBXNativeTarget "ParsingKitTests" */;
+			buildPhases = (
+				C48CD352230786AA005EE98C /* Sources */,
+				C48CD353230786AA005EE98C /* Frameworks */,
+				C48CD354230786AA005EE98C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C48CD35D230786AA005EE98C /* PBXTargetDependency */,
+			);
+			name = ParsingKitTests;
+			productName = ParsingKitTests;
+			productReference = C48CD356230786AA005EE98C /* ParsingKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C4A40C8C22D1DD5C003AABAD /* ParsingKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A40C9522D1DD5C003AABAD /* Build configuration list for PBXNativeTarget "ParsingKit" */;
@@ -128,9 +186,13 @@
 		C4A40C8422D1DD5C003AABAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = zkhaider;
 				TargetAttributes = {
+					C48CD355230786AA005EE98C = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					C4A40C8C22D1DD5C003AABAD = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
@@ -151,11 +213,19 @@
 			projectRoot = "";
 			targets = (
 				C4A40C8C22D1DD5C003AABAD /* ParsingKit */,
+				C48CD355230786AA005EE98C /* ParsingKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C48CD354230786AA005EE98C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A40C8B22D1DD5C003AABAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,11 +236,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C48CD352230786AA005EE98C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48CD362230786FC005EE98C /* Parsing.SpacesAndNewLines.Test.swift in Sources */,
+				C48CD359230786AA005EE98C /* ParsingKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A40C8922D1DD5C003AABAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4A40C9F22D1DDE5003AABAD /* Parser.Map.swift in Sources */,
+				C48CD364230798FC005EE98C /* Parser.Array.swift in Sources */,
 				C4A40CAF22D1DE5A003AABAD /* Parser.Rect.swift in Sources */,
 				C4A40CA122D1DDF4003AABAD /* Parser.Zip.swift in Sources */,
 				C4A40C9D22D1DDD6003AABAD /* Parser.Prefix.swift in Sources */,
@@ -187,7 +267,63 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C48CD35D230786AA005EE98C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A40C8C22D1DD5C003AABAD /* ParsingKit */;
+			targetProxy = C48CD35C230786AA005EE98C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C48CD35E230786AA005EE98C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
+				INFOPLIST_FILE = ParsingKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkhaider.ParsingKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		C48CD35F230786AA005EE98C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
+				INFOPLIST_FILE = ParsingKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkhaider.ParsingKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		C4A40C9322D1DD5C003AABAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C48CD360230786AA005EE98C /* Build configuration list for PBXNativeTarget "ParsingKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48CD35E230786AA005EE98C /* Debug */,
+				C48CD35F230786AA005EE98C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4A40C8722D1DD5C003AABAD /* Build configuration list for PBXProject "ParsingKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -28,6 +28,17 @@ extension Parser {
         }
     }
     
+    public static func string(_ word: String) -> Parser<String> {
+        return Parser<String> { str in
+            guard
+                str.hasPrefix(word)
+                else { return nil }
+            let prefix = str.prefix(word.count)
+            str.removeFirst(word.count)
+            return String(prefix)
+        }
+    }
+    
 }
 
 extension Parser where T == Void {
@@ -40,6 +51,27 @@ extension Parser where T == Void {
     public static let multiSpace: Parser<Void> = {
         return prefix(while: { $0 == " " })
             .flatMap { $0.isEmpty ? .never : Parser.always(()) }
+    }()
+    
+    public static let optionalNewLines: Parser<Void> = {
+        return prefix(while: { $0 == "\n" })
+            .map { _ in () }
+    }()
+    
+    public static let whitespacesAndNewLines: Parser<Void> = {
+        return prefix(while: { $0 == "\n" || $0 == " " })
+            .map { _ in () }
+    }()
+    
+    public static let whitespacesOrNewLines: Parser<T> = {
+        return Parser<Character>.char.flatMap { (character) -> Parser<T> in
+            switch character {
+            case " ", "\n":
+                return Parser.always(())
+            default:
+                return Parser.never
+            }
+        }
     }()
     
 }
