@@ -17,4 +17,16 @@ extension Parser where T == Float {
             return match
         })
     }()
+    
+    public static let percentage: Parser<T> = {
+        return zip(
+            .optionalSpaces,
+            .float,
+            .optionalSpaces,
+            .percent
+        ).map { _, float, _, _ in
+            return float / 100.0
+        }
+    }()
+    
 }

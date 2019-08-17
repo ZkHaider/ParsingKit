@@ -86,4 +86,16 @@ extension Parser where T == String {
             return match
         })
     }()
+    
+    public static let percent: Parser<T> = {
+        return Parser<T>(run: { substring -> String? in
+            guard
+                let prefix = substring.first(where: { $0 == "%" }),
+                let index = substring.firstIndex(where: { $0 == "%" })
+                else { return nil }
+            let match = String(prefix)
+            substring.remove(at: index)
+            return match 
+        })
+    }()
 }
