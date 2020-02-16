@@ -27,4 +27,8 @@ final class SpacesAndNewLinesTest: XCTestCase {
         )
     }
     
+    static var allTests = [
+        ("testSpacesAndNewLines", testSpacesAndNewLines)
+    ]
+    
 }
