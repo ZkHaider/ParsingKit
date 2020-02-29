@@ -7,6 +7,7 @@
 //
 
 import Foundation
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension Parser where T == CGRect {
@@ -38,3 +39,4 @@ extension Parser where T == CGRect {
     }()
     
 }
+#endif 

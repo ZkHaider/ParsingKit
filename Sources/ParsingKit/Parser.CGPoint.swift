@@ -7,6 +7,7 @@
 //
 
 import Foundation
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension Parser where T == CGPoint {
@@ -73,3 +74,4 @@ private let _parenthesisPointParser: Parser<CGPoint> = zip(
     ).map({ _, _, point, _, _ in
         return point
     })
+#endif 

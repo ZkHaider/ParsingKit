@@ -7,6 +7,7 @@
 //
 
 import Foundation
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension Parser where T == CGSize {
@@ -24,3 +25,4 @@ extension Parser where T == CGSize {
     }()
     
 }
+#endif 
